@@ -1,0 +1,35 @@
+name: Publish NBPost 0.1.36
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/release.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-0.1.36
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: v0.1.36
+      - name: Verify and package
+        shell: bash
+        run: |
+          printf '%s  NBPost.exe\n' '7e9cd04d9e68f9a708b2512e3843eacd94a25a647616cee38c1386bfd3064f8d' > SHA256.txt
+          sha256sum --check SHA256.txt
+          zip NBPost-0.1.36-Windows-portable.zip NBPost.exe 使用说明.md SHA256.txt
+          sha256sum NBPost-0.1.36-Windows-portable.zip >> SHA256.txt
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if ! gh release view v0.1.36 >/dev/null 2>&1; then
+            gh release create v0.1.36 --verify-tag --title 'NBPost 0.1.36' --notes 'Windows 便携版，解压后运行 NBPost.exe。中文输入法与 Tab 焦点行为已完成人工验收。本仓库仅提供程序、使用说明与校验值；产品源码不公开。'
+          fi
+          gh release upload v0.1.36 NBPost-0.1.36-Windows-portable.zip NBPost.exe 使用说明.md SHA256.txt --clobber

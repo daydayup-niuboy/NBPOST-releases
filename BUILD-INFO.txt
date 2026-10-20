@@ -1,0 +1,8 @@
+{
+  "version": "0.1.37",
+  "gitSha": "9e0b84cde04cd3a515df79dd028650d824c3b787-dirty",
+  "builtAtUnix": "1792513239",
+  "target": "x86_64-pc-windows-msvc",
+  "builtAtUtc": "2026-10-20T16:20:39.000Z",
+  "executableSha256": "ce9c402b084e72a2d1932a6c44dcac9d0e572581bb71e9a7864a16ca00788dce"
+}

@@ -4,9 +4,9 @@ NOTE & BROADCAST — 从灵感记录到内容发布。
 
 ## 下载
 
-[下载 NBPost 0.1.36 Windows 便携版](https://github.com/daydayup-niuboy/NBPOST-releases/releases/tag/v0.1.36)
+[下载 NBPost 0.1.37 Windows 便携版](https://github.com/daydayup-niuboy/NBPOST-releases/releases/tag/v0.1.37)
 
-下载 `NBPost-0.1.36-Windows-portable.zip`，解压后运行 `NBPost.exe`。校验值见 Release 附件 `SHA256.txt`。
+下载 `NBPost-0.1.37-Windows-portable.zip`，解压后运行 `NBPost.exe`。校验值见 Release 附件 `SHA256.txt`。
 
 [使用说明](使用说明.md)
 

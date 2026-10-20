@@ -1,3 +1,1 @@
-SHA256 的 artifacts\releases\0.1.36-portable\NBPost.exe 哈希:
-7e9cd04d9e68f9a708b2512e3843eacd94a25a647616cee38c1386bfd3064f8d
-CertUtil: -hashfile 命令成功完成。
+ce9c402b084e72a2d1932a6c44dcac9d0e572581bb71e9a7864a16ca00788dce  NBPost.exe

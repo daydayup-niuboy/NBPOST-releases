@@ -1,8 +1,9 @@
 {
-  "version": "0.1.37",
-  "gitSha": "9e0b84cde04cd3a515df79dd028650d824c3b787-dirty",
-  "builtAtUnix": "1792513239",
+  "version": "0.1.49",
+  "gitSha": "752c445ad301185ba00698fe0f2913c77c4eeff5",
+  "builtAtUnix": "1794574601",
   "target": "x86_64-pc-windows-msvc",
-  "builtAtUtc": "2026-10-20T16:20:39.000Z",
-  "executableSha256": "ce9c402b084e72a2d1932a6c44dcac9d0e572581bb71e9a7864a16ca00788dce"
+  "builtAtUtc": "2026-11-13T12:56:41.000Z",
+  "executableSha256": "b3cf0ef6e3d6a6dc8e216482e9861b573de1f75a693420b1450183b7b428945a",
+  "mcpExecutableSha256": "9f41d9a99c4423cee381435e17a3229277e6df15ff12d4ef81bb66f881a98ca5"
 }
